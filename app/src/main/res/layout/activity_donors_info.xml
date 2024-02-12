@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/blood_background"
+    android:orientation="vertical"
+    tools:context=".DonorsInfo">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/cardViewResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:gravity="center"
+        android:layout_marginBottom="41dp"
+        android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/GenderResultTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="49dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="9dp"
+                    android:text="."
+                    android:textColor="@color/red"
+                    app:layout_constraintBottom_toTopOf="@+id/PhoneResultTxt"
+                    app:layout_constraintEnd_toEndOf="@+id/PhoneResultTxt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/PhoneResultTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="49dp"
+                    android:text="."
+                    android:textColor="@color/red"
+                    app:layout_constraintBottom_toTopOf="@+id/AgeResultTxt"
+                    app:layout_constraintEnd_toEndOf="@+id/AgeResultTxt"
+                    app:layout_constraintTop_toBottomOf="@+id/GenderResultTxt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/AgeResultTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="49dp"
+                    android:text="."
+                    android:textColor="@color/red"
+                    app:layout_constraintBottom_toTopOf="@+id/EmailResultTxt"
+                    app:layout_constraintEnd_toEndOf="@+id/EmailResultTxt"
+                    app:layout_constraintTop_toBottomOf="@+id/PhoneResultTxt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/EmailResultTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="49dp"
+                    android:text="."
+                    android:textColor="@color/red"
+                    app:layout_constraintBottom_toTopOf="@+id/LocationResultTxt"
+                    app:layout_constraintEnd_toEndOf="@+id/LocationResultTxt"
+                    app:layout_constraintTop_toBottomOf="@+id/AgeResultTxt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/LocationResultTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="49dp"
+                    android:text="."
+                    android:textColor="@color/red"
+                    app:layout_constraintBottom_toTopOf="@+id/DiabeticResultTxt"
+                    app:layout_constraintEnd_toEndOf="@+id/DiabeticResultTxt"
+                    app:layout_constraintTop_toBottomOf="@+id/EmailResultTxt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/DiabeticResultTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="49dp"
+                    android:text="."
+                    android:textColor="@color/red"
+                    app:layout_constraintBottom_toTopOf="@+id/BloodPressureTextView"
+                    app:layout_constraintEnd_toEndOf="@+id/BloodPressureResultTxt"
+                    app:layout_constraintTop_toBottomOf="@+id/LocationResultTxt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/BloodPressureResultTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="49dp"
+                    android:text="."
+                    android:textColor="@color/red"
+                    app:layout_constraintBottom_toTopOf="@+id/BloodTypeTextView"
+                    app:layout_constraintEnd_toEndOf="@+id/BloodTypeResultTxt"
+                    app:layout_constraintTop_toBottomOf="@+id/BloodPressureTextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/BloodTypeResultTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="49dp"
+                    android:text="."
+                    android:textColor="@color/red"
+                    app:layout_constraintBottom_toBottomOf="@+id/BloodTypeTextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/BloodTypeTextView"
+                    app:layout_constraintTop_toTopOf="@+id/BloodTypeTextView" />
+            </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

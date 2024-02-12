@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blood_background"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SignUpDonorDetails">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="449dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/diabeticTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="11dp"
+            android:text="@string/diabetic"
+            android:textColor="@color/red" />
+
+        <RadioGroup
+            android:id="@+id/diabeticRadioGroup"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="42dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/isDiabetic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+                android:textColor="@color/red" />
+
+            <RadioButton
+                android:id="@+id/isNotDiabetic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no"
+                android:textColor="@color/red" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bloodPressureTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="11dp"
+            android:text="@string/blood_presure"
+            android:textColor="@color/red" />
+
+        <RadioGroup
+            android:id="@+id/pressureRadioGroup"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="42dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/hasBloodPressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:textColor="@color/red" />
+
+            <RadioButton
+                android:id="@+id/hasNotBloodPressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textColor="@color/red" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/bloodTypeTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginBottom="11dp"
+            android:text="@string/blood_type"
+            android:textColor="@color/red" />
+
+        <Spinner
+            android:id="@+id/BloodTypeSpinner2"
+            android:layout_width="343dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="26dp"
+            android:background="@drawable/color_border"
+            android:entries="@array/bloodType" />
+        <!--            android:entries="@array/bloodType" />-->
+        <Button
+            android:id="@+id/signup_donor_details_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="#E80202"
+            android:text="@string/sign_up"
+            android:textColor="#F6F2F2"
+            android:textSize="18sp" />
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

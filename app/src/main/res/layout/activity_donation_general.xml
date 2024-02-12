@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/blood_background"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".BloodDonationGeneral">
+
+    <ScrollView
+        android:id="@+id/generalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="61dp">
+
+        <LinearLayout
+            android:id="@+id/generalViewResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="61dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageViewResults"
+                    android:layout_width="match_parent"
+                    android:layout_height="142dp"
+                    android:layout_gravity="center"
+                    app:layout_constraintBottom_toTopOf="@+id/firstResultTxt"
+                    app:layout_constraintEnd_toEndOf="@+id/firstResultTxt"
+                    app:srcCompat="@drawable/blood_bank_logo"
+                    android:contentDescription="@string/logo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/firstResultTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginEnd="35dp"
+                    android:text="@string/giving_the_right_type_of_blood_donation_based_on_your_blood_type_and_patient_needs_helps_ensure_the_best_use_of_your_valuable_contribution_here_are_some_things_to_consider_when_determining_how_you_can_have_the_most_impact"
+                    android:textColor="@color/red"
+                    app:layout_constraintBottom_toTopOf="@+id/imageViewResults"
+                    app:layout_constraintEnd_toEndOf="@+id/imageViewResults" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/secondResultText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="49dp"
+                    android:text="@string/types_of_blood_donation"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/firstResultTxt"
+                    app:layout_constraintEnd_toEndOf="@+id/firstResultTxt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/thirdResultText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="49dp"
+                    android:text="@string/whole_blood"
+                    android:textColor="@color/red"
+                    app:layout_constraintBottom_toTopOf="@+id/secondResultTxt"
+                    app:layout_constraintEnd_toEndOf="@+id/secondResultText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/fourthResultText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="49dp"
+                    android:text="@string/platelets"
+                    android:textColor="@color/red"
+                    app:layout_constraintBottom_toTopOf="@+id/thirdResultTxt"
+                    app:layout_constraintEnd_toEndOf="@+id/thirdResultText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/fifthResultText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="49dp"
+                    android:text="@string/plasma"
+                    android:textColor="@color/red"
+                    app:layout_constraintBottom_toTopOf="@+id/fourthResultTxt"
+                    app:layout_constraintEnd_toEndOf="@+id/fourthResultText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/sixthResultText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="49dp"
+                    android:text="@string/double_red_cells"
+                    android:textColor="@color/red"
+                    app:layout_constraintBottom_toTopOf="@+id/fifthResultTxt"
+                    app:layout_constraintEnd_toEndOf="@+id/fifthResultText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/seventhResultText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="49dp"
+                    android:text="@string/autologous_donation"
+                    android:textColor="@color/red"
+                    app:layout_constraintBottom_toTopOf="@+id/sixthResultTxt"
+                    app:layout_constraintEnd_toEndOf="@+id/sixthResultText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/eigthResultText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="49dp"
+                    android:text="@string/directed_donation"
+                    android:textColor="@color/red"
+                    app:layout_constraintBottom_toTopOf="@+id/seventhResultText"
+                    app:layout_constraintEnd_toEndOf="@+id/seventhResultText" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="7dp"
+        android:backgroundTint="#E80202"
+        android:gravity="center"
+        android:onClick="backButton"
+        android:text="Back"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/generalScrollView" />
+</RelativeLayout>

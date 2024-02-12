@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bloodup">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:screenOrientation="landscape"
+        android:theme="@style/Theme.BloodUp">
+        <activity
+            android:name=".MainActivity"/>
+        <activity android:name=".SignIn"
+            android:label="Sign In"/>
+        <activity android:name=".SignUp"
+            android:label="Sign Up"/>
+        <activity android:name=".BloodDonation"
+            android:label="BloodDonation"/>
+        <activity android:name=".BloodDonationList"
+        android:label="BloodDonationList"/>
+        <activity android:name=".BloodDonationProcess"
+            android:label="BloodDonationProcess"/>
+        <activity android:name=".BloodDonationAfterProcess"
+            android:label="BloodDonationAfterProcess"/>
+        <activity android:name=".BloodDonationGeneral"
+            android:label="BloodDonationGeneral"/>
+        <activity android:name=".WelcomePage"
+            android:label="BloodUp"/>
+        <activity android:name=".SignUpDonorDetails"
+            android:label="SignUp"/>
+        <activity android:name=".SignUpHospital"
+            android:label="SignUp"/>
+        <activity android:name=".HospitalHomepage"
+            android:label="Hopsital Homepage"/>
+        <activity android:name=".Donors"
+            android:label="Available Donors"/>
+        <activity android:name=".DonorsResults"
+            android:label="Donors Results"/>
+        <activity android:name=".DonorCriteria"
+            android:label="Donor Criteria"/>
+        <activity android:name=".SettingsHospital"
+            android:label="Settings"/>
+        <activity android:name=".SettingsDonors"
+            android:label="Settings"/>
+        <activity android:name=".DonorsInfo"
+            android:label="Donors Information"/>
+        <activity android:name=".Splash">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
